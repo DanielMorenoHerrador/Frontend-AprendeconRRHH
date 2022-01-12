@@ -1,26 +1,35 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Nav from './Components/Nav/Nav';
 import Home from './Containers/Home/Home';
 import Login from './Containers/Login/Login';
-
-
+import Register from './Containers/Register/Register';
+import Profile from './Containers/Profile/Profile';
+import Hiredservices from './Containers/Hiredservices/Hiredservices';
+import Profileservices from './Containers/Profileservices/Profileservices';
+import Services from './Containers/Services/Services';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
 
+      <Nav/>
 
-<Routes>
+      <Routes>
 
   
-  <Route path="/" element={<Home/>}/>
-  <Route path="/login" element={<Login/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/hiredservices" element={<Hiredservices/>}/>
+        <Route path="/profileservices" element={<Profileservices/>}/>
+        <Route path="/services" element={<Services/>}/>
 
+      </Routes>
 
-</Routes>
-
-</BrowserRouter>
+      </BrowserRouter>
       
     </div>
   );
