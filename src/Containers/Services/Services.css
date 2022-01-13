@@ -1,0 +1,23 @@
+.servicesone {
+    height: 30em;
+    width: 95em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3em;
+}
+.serv {
+    height: 20em;
+    width: 15em;
+    border: solid black 0.1em;
+    border-radius: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

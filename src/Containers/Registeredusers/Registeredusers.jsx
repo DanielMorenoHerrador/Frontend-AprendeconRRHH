@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import loading from '../../Assets/loading.gif';
+
 
 
 const Users = (props) => {
@@ -55,7 +57,7 @@ const Users = (props) => {
 
         return (
             <div>
-                Los usuarios estan llegando
+                <img alt='loading' className="loading" src={loading} />
             </div>
         )
     }}

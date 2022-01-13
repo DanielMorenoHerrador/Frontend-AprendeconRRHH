@@ -9,7 +9,7 @@ const Nav = (props) => {
         return (
             <div className="designnav">
                 <div className="home">
-                    <View destino="HOME" url="/" />
+                    <View destino="HOME" url="/"  />
                 </div>
                 <div className="services">
                     <View destino="SERVICES" url="/services" />

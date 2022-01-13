@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { ORDER } from '../../redux/types';
-
+import './Profileservices.css';
 
 const Profileservices = (props) => {
 
@@ -61,11 +61,13 @@ const Profileservices = (props) => {
 
 
     return (
-        <div className="profilePelicula">
+        <div className='designprofserv'>
+            <div className="profileservice">
                 <div className="nameservice"><p>{service.name}</p></div>
                 <div className="priceservice"><p>{service.price}€</p></div>
                 <button className="botonalqui" onClick={() => ordered()}>CONTRATAR SERVICIO</button>
             </div>
+        </div>
     )
 
 }

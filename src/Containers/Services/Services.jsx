@@ -2,6 +2,7 @@ import './Services.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import loading from '../../Assets/loading.gif';
 
 
 const Services = () => {
@@ -40,7 +41,7 @@ const Services = () => {
     if (services[1]?.name) {
 
         return (
-                <div>{services.map((serv) => {
+                <div className='servicesone'>{services.map((serv) => {
                             return (
                                 <div className="serv" key={serv.id}>
                                     <div className="designnameservice" onClick={() => findService(serv)}>{serv.name}</div>
@@ -52,8 +53,8 @@ const Services = () => {
         } else {
 
         return (
-            <div>
-                esperando a que lleguen los servicios
+            <div className='cargando'>
+                <img alt='loading' className="loading" src={loading} />
             </div>
         )
     }
