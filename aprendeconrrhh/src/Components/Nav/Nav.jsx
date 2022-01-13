@@ -17,7 +17,7 @@ const Nav = (props) => {
                 <div className="title">APRENDECONRRHH
                 </div>
                 <div className="allhiredservices">
-                    <View destino="HIREDSERVICES" url="/allhiredservices" />
+                    <View destino="HIREDSERVICES" url="/hiredservices" />
                 </div>
                 <div className="registeredusers">
                     <View destino="REGISTEREDUSERS" url="/registeredusers" />
@@ -38,9 +38,6 @@ const Nav = (props) => {
                     <View destino="SERVICES" url="/services" />
                 </div>
                 <div className="title">APRENDECONRRHH
-                </div>
-                <div className="allhiredservices">
-                    <View destino="HIREDSERVICES" url="/allhiredservices" />
                 </div>
                 <div className="profile">
                     <View destino="PROFILE" url="/profile" />

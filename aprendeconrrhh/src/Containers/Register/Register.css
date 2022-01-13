@@ -1,0 +1,24 @@
+.designRegister {
+    width: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    margin-left: 30em;
+}
+
+.botonSend {
+    cursor: pointer;
+    border-radius: 0.2em;
+    height: 2em;
+    width: 6em;
+    background-color: blue;
+    transition: 0.4s;
+    color: beige;
+}
+
+.botonSend:hover {
+    transition: 0.4s;
+    background-color: darkblue;
+}

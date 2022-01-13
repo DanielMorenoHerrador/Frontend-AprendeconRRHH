@@ -11,8 +11,6 @@ const View = (props) => {
         Navegar(props.url);
     }
 
-    console.log("props: ", props);
-
         return (
             <div className="designView" onClick={()=>cambioView()}>{props.destino}</div>
         )
