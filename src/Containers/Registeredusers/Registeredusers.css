@@ -1,0 +1,26 @@
+.designregusers {
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+
+.loading {
+    margin-top: 10em;
+}
+
+.usersContainer {
+    margin-top: 5em;
+    margin-bottom: 4em;
+    margin-left: 18em;
+    height: 20em;
+    width: 22em;
+    border: solid black 0.1em;
+    border-radius: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.7cm;
+}

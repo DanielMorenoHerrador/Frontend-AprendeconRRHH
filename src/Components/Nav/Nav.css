@@ -1,14 +1,17 @@
 
 .designnav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 5em;
-    width: 95.42em;
+    height: 4em;
+    width: 95.7em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border: solid black 0.3em;
+    border: solid black 0.15em;
     background-color: salmon;
+    position:fixed;
+    left:0px;
+    top:0px;
 }
 
 .home {

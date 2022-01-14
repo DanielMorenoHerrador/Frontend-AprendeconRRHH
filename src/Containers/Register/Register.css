@@ -6,6 +6,8 @@
     align-items: center;
     margin-top: 10em;
     margin-left: 30em;
+    margin-top: 5em;
+    margin-bottom: 4em;
 }
 
 .botonSend {
@@ -13,12 +15,7 @@
     border-radius: 0.2em;
     height: 2em;
     width: 6em;
-    background-color: blue;
+    background-color: white;
     transition: 0.4s;
-    color: beige;
-}
-
-.botonSend:hover {
-    transition: 0.4s;
-    background-color: darkblue;
+    color: black;
 }

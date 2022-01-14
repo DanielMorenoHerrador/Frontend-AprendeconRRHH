@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5em;
+    margin-bottom: 4em;
     margin-top: 15em;
     margin-right: 1em;
 }
@@ -10,7 +12,8 @@
 .sendButton{
     height: 2em;
     width: 6em;
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 0.2em;
+    cursor: pointer;
 }

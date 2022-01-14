@@ -1,0 +1,21 @@
+.orderscontainer {
+    margin-top: 5em;
+    margin-bottom: 4em;
+    margin-left: 22em;
+    height: 10em;
+    width: 15em;
+    border: solid black 0.1em;
+    border-radius: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.7cm;
+}
+
+.loading {
+    margin-top: 10em;
+}

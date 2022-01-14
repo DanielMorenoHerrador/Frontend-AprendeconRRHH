@@ -1,0 +1,14 @@
+.designfooter {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 2em;
+    width: 95.7em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: solid black 0.15em;
+    background-color: salmon;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}

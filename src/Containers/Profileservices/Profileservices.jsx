@@ -63,8 +63,9 @@ const Profileservices = (props) => {
     return (
         <div className='designprofserv'>
             <div className="profileservice">
-                <div className="nameservice"><p>{service.name}</p></div>
-                <div className="priceservice"><p>{service.price}€</p></div>
+                <div className="nameservice"><h1>{service.name}</h1></div>
+                <div className="descriptionservice"><p>{service.description}</p></div>
+                <div className="priceservice"><h1>{service.price}€</h1></div>
                 <button className="botonalqui" onClick={() => ordered()}>CONTRATAR SERVICIO</button>
             </div>
         </div>

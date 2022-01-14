@@ -8,7 +8,10 @@ import Profile from './Containers/Profile/Profile';
 import Hiredservices from './Containers/Hiredservices/Hiredservices';
 import Profileservices from './Containers/Profileservices/Profileservices';
 import Services from './Containers/Services/Services';
-import Registeredusers from './Containers/Registeredusers/Registeredusers'
+import Registeredusers from './Containers/Registeredusers/Registeredusers';
+import Contact from './Containers/Contact/Contact';
+import Footer from './Components/Footer/Footer';
+
 function App() {
   return (
     <div className="App">
@@ -27,8 +30,11 @@ function App() {
         <Route path="/profileservices" element={<Profileservices/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/registeredusers" element={<Registeredusers/>}/>
+        <Route path="/contact" element={<Contact/>}/>
 
       </Routes>
+
+      <Footer/>
 
       </BrowserRouter>
       

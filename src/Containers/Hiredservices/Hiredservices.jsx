@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import loading from '../../Assets/loading.gif';
+import './Hiredservices.css';
 
 
 
@@ -38,7 +39,7 @@ const Orders = (props) => {
         <div className="designorder">
             {order.map((order) => {
                 return (
-                    <div key={order.id} className="ordersContainer">
+                    <div key={order.id} className="orderscontainer">
                         <h4>Numero de order: {order.id}</h4>
                         <p>User ID: {order.userId}</p>
                         <p>Service ID: {order.serviceId}</p>

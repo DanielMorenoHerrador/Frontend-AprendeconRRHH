@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import loading from '../../Assets/loading.gif';
+import './Registeredusers.css';
 
 
 
@@ -35,7 +36,7 @@ const Users = (props) => {
 
     if (user[1]) {
         return (
-        <div className="designorder">
+        <div className="designregusers">
             {user.map((user) => {
                 return (
                     <div key={user.id} className="usersContainer">
