@@ -1,4 +1,6 @@
 .designLogin{
+    height: 20em;
+    width: 30em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,6 +9,10 @@
     margin-bottom: 4em;
     margin-top: 15em;
     margin-right: 1em;
+    margin-left: 33em;
+    border: solid black 0.1em;
+    background-color: white;
+    border-radius: 1em;
 }
 
 .sendButton{

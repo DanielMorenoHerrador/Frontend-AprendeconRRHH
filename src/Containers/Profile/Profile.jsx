@@ -3,24 +3,55 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import './Profile.css';
 import { LOGOUT, UPDATE_USER } from '../../redux/types';
+import axios from 'axios';
 
 const Profile = (props) => {
 
     const history = useNavigate();
 
+    let token = {
+        headers: { Authorization: `Bearer ${props.credentials.token}` },
+    };
+
     //Hook para los input
-    const [userData, setUserData] = useState(props.credentials.user);
+    const [user, setUsers] = useState(props.credentials.user);
+    const [msgError, setmsgError] = useState("");
 
 
     //Funcion para manejar el estado de los input
     const manejaInputs = (e) => {
-        setUserData({ ...userData, [e.target.name]: e.target.value });
+        setUsers({ ...user, [e.target.name]: e.target.value });
     }
 
     //Funcion para hacer la actualizacion de los datos
     const update = async () => {
-        props.dispatch({ type: UPDATE_USER, payload: userData });
-    }
+        let body = {
+        name: user.name,
+        city: user.city,
+        email: user.email,
+        phone: user.phone,
+        adress: user.adress,
+        };
+    
+        try {
+        const res = await axios.put(
+            `https://aprendeconrrhh.herokuapp.com/users/update`,
+            body,
+            token
+        );
+        setmsgError(res.data.message);
+        setTimeout(() => {
+            props.dispatch({ type: UPDATE_USER, payload: user });
+            history("/profile");
+        }, 1000);
+        } catch (error) {
+        setmsgError("No se actualizaron los datos");
+        console.log(user);
+        return;
+        }
+    };
+
+
     //Funcion para que limpie los datos de perfil de redux y asi deslogearse
     const logOut = () => {
         props.dispatch({ type: LOGOUT });
@@ -29,7 +60,7 @@ const Profile = (props) => {
 
 
     useEffect(() => {
-        setUserData(props.credentials.user);
+        setUsers(props.credentials.user);
     }, [props.credentials]);
 
 
@@ -37,11 +68,11 @@ const Profile = (props) => {
         return (
             console.log("Estas en perfil"),
             <div className="designProfileone">
-                <div className="user"><input value={userData?.name || false} name="name" onChange={manejaInputs} /></div>
-                <div className="user"><input value={userData?.city || false} name="city" onChange={manejaInputs} /></div>
-                <div className="user"><input value={userData?.email || false} name="email" onChange={manejaInputs} /></div>
-                <div className="user"><input value={userData?.phone || false} name="phone" onChange={manejaInputs} /></div>
-                <div className="user"><input value={userData?.adress || false} name="adress" onChange={manejaInputs} /></div>
+                <div className="user"><input value={user?.name || false} name="name" onChange={manejaInputs} /></div>
+                <div className="user"><input value={user?.city || false} name="city" onChange={manejaInputs} /></div>
+                <div className="user"><input value={user?.email || false} name="email" onChange={manejaInputs} /></div>
+                <div className="user"><input value={user?.phone || false} name="phone" onChange={manejaInputs} /></div>
+                <div className="user"><input value={user?.adress || false} name="adress" onChange={manejaInputs} /></div>
                 <div className="botoneslogoutupdate">
                     <div className="sendButton" onClick={() => logOut()}>LOGOUT</div>
                     <div className="sendButton" onClick={() => update()}>UPDATE</div>
@@ -52,7 +83,7 @@ const Profile = (props) => {
     } else {
         return (
             <div className="designProfiletwo">
-                SHHHH....ES UN SECRETO....LOGEATE....
+                Logeate primero...
             </div>
         )
     }
