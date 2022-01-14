@@ -2,9 +2,9 @@
 .designProfileone {
     height: 30em;
     width: 30em;
-    margin-left: 35em;
+    margin-left: 32em;
     border-radius: 1em;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 4em;
     border: solid black 0.2em;
     background-color: white;
@@ -33,5 +33,23 @@
 }
 
 .designProfiletwo{
+    margin-top: 5em;
+}
+
+.containerorders {
+    margin-top: 9em;
+    padding-bottom: 3em;
+}
+.detail {
+    height: 12em;
+    width: 30em;
+    border-radius: 1em;
+    margin-top: 5em;
+    margin-bottom: 4em;
+    border: solid black 0.2em;
+    background-color: white;
+}
+
+.datosperfil{
     margin-top: 5em;
 }
