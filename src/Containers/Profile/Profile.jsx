@@ -35,10 +35,10 @@ const Profile = (props) => {
     
         try {
         const res = await axios.put(
-            `https://aprendeconrrhh.herokuapp.com/users/update`,
-            body,
-            token
+            "https://aprendeconrrhh.herokuapp.com/users/update",
+            body
         );
+        console.log(body);
         setmsgError(res.data.message);
         setTimeout(() => {
             props.dispatch({ type: UPDATE_USER, payload: user });
@@ -46,7 +46,8 @@ const Profile = (props) => {
         }, 1000);
         } catch (error) {
         setmsgError("No se actualizaron los datos");
-        console.log(user);
+        console.log(body);
+        console.log(setmsgError);
         return;
         }
     };
