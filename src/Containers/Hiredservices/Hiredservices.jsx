@@ -27,13 +27,14 @@ const Orders = (props) => {
 
     const bringOrders = async () => {
         try {
-            let res = await axios.get("https://aprendeconrrhh.herokuapp.com/orders");
+            let res = await axios.post("https://aprendeconrrhh.herokuapp.com/orders");
                 setOrders(res.data);
         } catch (error) {
             setmsgError("No se ha podido traer los orders");
         }
     };
 
+    
     if (order[1]?.userId) {
         return (
         <div className="designorder">
