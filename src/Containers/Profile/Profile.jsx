@@ -43,7 +43,7 @@ const Profile = (props) => {
         try {
             const res = await axios.post(
                 "https://aprendeconrrhh.herokuapp.com/orders/getByUserId",
-                body);
+                body, token);
                 setOrders(res.data);
                 console.log(res);
             
