@@ -1,3 +1,33 @@
+# PROYECTO Backend-Aprendeconrrhh:books:
+
+## :feet:Autor: Daniel Moreno  :calendar:Fecha: 14/01/2022
+
+## TECNOLOGIAS EMPLEADAS:
+- React
+- Redux
+
+Este proyecto consiste en una web de orientación laboral, tanto como para empleados como para empresas, en la que podras loggearte y contratar los servicios disponibles.
+
+![image](https://user-images.githubusercontent.com/90707206/149602303-4e34caef-2e56-4e12-8313-5e656383bb19.png)
+
+### Ejemplo de vista del Home
+
+![image](https://user-images.githubusercontent.com/90707206/149602322-b0512410-7220-4b25-a142-6619204ffafd.png)
+
+
+### Ejemplo de la pagina de registro
+
+![image](https://user-images.githubusercontent.com/90707206/149602357-c2f99d6c-48a4-4e70-9fb7-578668b12582.png)
+
+
+## Ejemplo de la pagina de login
+
+![image](https://user-images.githubusercontent.com/90707206/149602376-3c843b85-45eb-41f5-96ad-7d937e3833c6.png)
+
+
+### Enlace AWS: https://main.dwdzagkkwu1zo.amplifyapp.com/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
