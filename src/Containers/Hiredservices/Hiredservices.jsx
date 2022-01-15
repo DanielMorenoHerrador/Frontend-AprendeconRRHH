@@ -12,6 +12,10 @@ const Orders = (props) => {
     const [order, setOrders] = useState([]);
     const [msgError, setmsgError] = useState("");
 
+    let token = {
+        headers: { Authorization: `Bearer ${props.credentials.token}` },
+    };
+
     useEffect(() => {
 
         setTimeout(() => {
@@ -27,7 +31,7 @@ const Orders = (props) => {
 
     const bringOrders = async () => {
         try {
-            let res = await axios.post("https://aprendeconrrhh.herokuapp.com/orders");
+            let res = await axios.post("https://aprendeconrrhh.herokuapp.com/orders", token);
                 setOrders(res.data);
         } catch (error) {
             setmsgError("No se ha podido traer los orders");
