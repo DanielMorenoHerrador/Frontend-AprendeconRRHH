@@ -94,7 +94,7 @@ const Profile = (props) => {
         return (
             <div className="prfl">
                 <><div className="datosperfil">
-                <h4>DATOS DE PERFIL</h4>
+                <h2>DATOS DE PERFIL</h2>
             </div><div className="designProfileone">
 
                     <div className="user"><input value={user?.name || false} name="name" onChange={manejaInputs} /></div>
