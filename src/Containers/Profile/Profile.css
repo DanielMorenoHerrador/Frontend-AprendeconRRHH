@@ -70,9 +70,9 @@
 @media screen and (max-width: 768px) {
     
 .designProfileone {
-    height: 30em;
-    width: 30em;
-    margin-left: 15em;
+    height: 23em;
+    width: 18em;
+    margin-left: 5em;
     border-radius: 1em;
     margin-top: 3em;
     margin-bottom: 4em;
@@ -112,7 +112,7 @@
 }
 .detail {
     height: 12em;
-    width: 30em;
+    width: 18em;
     border-radius: 1em;
     margin-top: 5em;
     margin-bottom: 4em;
@@ -122,6 +122,6 @@
 
 .datosperfil{
     margin-top: 5em;
-    margin-left: 15em;
+    margin-left: 5em;
 }
 }
