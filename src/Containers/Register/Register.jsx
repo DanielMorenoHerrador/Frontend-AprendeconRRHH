@@ -91,7 +91,8 @@ const Register = () => {
 
     //Renderizado
     return (
-        <div className="designRegister">
+        <div className="regtr">
+            <div className="designRegister">
             {/* <pre>{JSON.stringify(user, null, 2)}</pre> */}
             <input type='text' name='name' title='name' onChange={userHandler} lenght='30' placeholder='Nombre' />
             <input type='text' name='dni' title='dni' onChange={userHandler} lenght='10' placeholder='DNI' />
@@ -105,6 +106,8 @@ const Register = () => {
             <div className="botonSend" onClick={() => sendRegister()}>Registrame</div>
             <div>{msgError}</div>
         </div>
+        </div>
+        
     )
 };
 

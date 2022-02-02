@@ -1,3 +1,7 @@
+.regtr {
+    height: 30%;
+    width: 30%;
+}
 .designRegister {
     height: 50em;
     width: 30em;
@@ -7,9 +11,7 @@
     align-items: center;
     margin-top: 10em;
     margin-left: 30em;
-    margin-top: 5em;
     margin-bottom: 4em;
-    margin-left: 33em;
     border: solid black 0.1em;
     background-color: white;
     border-radius: 1em;
@@ -28,4 +30,37 @@
     transition: 0.4s;
     color: black;
     border: solid black 0.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .designRegister {
+        height: 50em;
+        width: 40em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10em;
+        margin-bottom: 3em;
+        margin-left: 2em;
+        margin-right: 2em;
+        border: solid black 0.1em;
+        background-color: white;
+        border-radius: 1em;
+    }
+    
+    .botonSend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 0.2em;
+        height: 2em;
+        width: 6em;
+        background-color: white;
+        transition: 0.4s;
+        color: black;
+        border: solid black 0.1em;
+}
 }

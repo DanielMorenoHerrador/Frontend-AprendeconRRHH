@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 980px){
+  #container{
+      width: 90%;
+  }
+  #body{
+      width: 60%;
+  }
+  #Nav{
+      width:30%;
+  }
+}

@@ -92,8 +92,9 @@ const Profile = (props) => {
 
     if (props.credentials?.token !== '') {
         return (
-            <><div className="datosperfil">
-                <h2>DATOS DE PERFIL</h2>
+            <div className="prfl">
+                <><div className="datosperfil">
+                <h4>DATOS DE PERFIL</h4>
             </div><div className="designProfileone">
 
                     <div className="user"><input value={user?.name || false} name="name" onChange={manejaInputs} /></div>
@@ -122,6 +123,8 @@ const Profile = (props) => {
                         </div>
                     </div>
                 </div></>
+            </div>
+            
         )
 
     } else {

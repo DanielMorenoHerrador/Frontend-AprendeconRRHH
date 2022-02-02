@@ -55,14 +55,16 @@ const Login = (props) => {
 
 
     return (
-
-        <div className="designLogin">
+        <div className="lgn">
+            <div className="designLogin">
             {/*<pre>{JSON.stringify(credentials, null,2)}</pre>*/}
             <input type='email' name='email' title='correo' onChange={manejadorInputs} lenght='30' placeholder='Email' />
             <input type='password' name='password' title='clave' onChange={manejadorInputs} lenght='30' placeholder='Password' />
             <div className="sendButton" onClick={() => logme()}>Login</div>
             <div className="error">{msgError}</div>
         </div>
+        </div>
+        
     )
 };
 
