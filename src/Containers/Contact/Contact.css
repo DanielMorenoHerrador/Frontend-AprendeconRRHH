@@ -10,7 +10,7 @@
 body{
   height: 100%; 
   font-family: 'Noto Sans', sans-serif;
-  background-color: #ab4493; 
+  background-color: rgb(165, 164, 164); 
 }
 
 .formulario {
@@ -72,11 +72,11 @@ button{
   margin-bottom: 20px; 
   margin-top: 10px;   
   text-transform: uppercase;
-  background-color: #ab4493; 
-  border-color: #ab4493; 
+  background-color: transparent; 
+  border-color: black; 
   border-style: solid; 
   border-radius: 10px;  
-  width: 420px;   
+  width: 200px;   
   cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ button p{
 
 
 span{
-  color: #ab4493; 
+  color: #bdb3ba; 
 }
 
 
