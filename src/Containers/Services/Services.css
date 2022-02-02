@@ -36,7 +36,7 @@
 @media screen and (max-width: 768px) {
     .servicesone {
         height: 20%;
-        width: 20em;
+        width: 22em;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
